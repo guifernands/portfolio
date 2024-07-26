@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor1: #8F3DBB;
+    --cor2: #774791;
+    --cor3: #A125E5;
+    --cor4: #5A4366;
+    --cor5: #38313C;
+    --cor6: #302933;
+
+    --fonte-padrao: 'Courier Prime';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(230, 230, 230);
+    font-family: var(--fonte-padrao);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2) );
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 6vh;
+    background-color: rgba(128, 128, 128, 0.096);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header > div.logo-menu {
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+header > div.logo-menu > a {
+    text-decoration: none;
+}
+
+header > i {
+    cursor: pointer;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+header > nav {
+    display: none;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 94vh;
+}
+
+main > section.main-title {
+    width: 320px;
+    height: 80px;
+}
+
+main > section.main-title > p {
+    font-size: 24px;
+}
+
+main > section.main-title > h1 {
+    font-size: 45px;
+}
+
+main > section.main-text > p {
+    
+}
+
+main > section.main-image > div {
+    width: 320px;
+    height: 190px;
+    background: url(../imagens/developer.jpg) center center;
+    background-size: cover;
+} 

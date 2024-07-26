@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Gui</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    <header>
+
+        <div class="logo-menu"><a href="index.html">gui</a></div>
+
+        <nav id="itens">
+            <a href="#">Início</a>
+            <a href="#">Resumo</a>
+            <a href="#">Projetos</a>
+        </nav>
+
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+
+    </header>
+
+    <main>
+
+        <section class="main-title">
+            <p>Opa! Sou</p>
+            <h1>Guilherme Fernandes</h1>
+            <p>Desenvolvedor de Sites Iniciante</p>
+        </section>
+
+        <section class="main-text">
+            <p>Me conheça um pouco mais</p>
+        </section>
+        
+        <section class="main-image">
+            <div></div>
+        </section>
+        
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+</html>
