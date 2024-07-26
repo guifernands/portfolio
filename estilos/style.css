@@ -35,9 +35,11 @@ header {
     height: 6vh;
     background-color: rgba(128, 128, 128, 0.096);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.068);
 }
 
 header > div.logo-menu {
+    user-select: none;
     margin-left: 20px;
     font-size: 1.4em;
 }
@@ -47,31 +49,37 @@ header > div.logo-menu > a {
 }
 
 header > i {
+    user-select: none;
     cursor: pointer;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
 }
 
-header > nav {
+header > nav#itens {
     display: none;
 }
 
-header > nav > a {
+header > nav#itens > a {
     text-decoration: none;
     margin-right: 10px;
 }
 
+header > nav#itens > a:hover {
+    text-decoration: underline;
+}
+
 main {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 94vh;
 }
 
 main > section.main-title {
+    margin-top: 70px;
     width: 320px;
-    height: 80px;
+    height: 180px;
 }
 
 main > section.main-title > p {
@@ -82,13 +90,65 @@ main > section.main-title > h1 {
     font-size: 45px;
 }
 
+main > section.main-image > div {
+    background: url(../imagens/gui-trabalho.PNG);
+    background-size: cover;
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+}
+
+main > section.main-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    width: 300px;
+}
+
+main > section.main-social > nav > a > img {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+main > section.main-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    width: 320px;
+    margin-bottom: 60px;
+}
+
 main > section.main-text > p {
-    
+    font-size: 16px;
+    width: 160px;
+}
+
+main > section.main-text > i {
+    font-size: 18px;
+}
+
+main > section.main-text > a {
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: var(--cor5);
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+main > section.main-text > a:hover {
+    background-color: white;
+    color: var(--cor6);
+    transition: .6s;
 }
 
 main > section.main-image > div {
-    width: 320px;
-    height: 190px;
-    background: url(../imagens/developer.jpg) center center;
-    background-size: cover;
+    
 } 
