@@ -5,8 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gui's Portfolio</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="all">
+
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <style>
+        main {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 94vh;
+        }
+
+        main > section.main-title {
+            margin-top: 70px;
+            width: 320px;
+            height: 180px;
+        }
+
+        main > section.main-title > p {
+            font-size: 24px;
+        }
+
+        main > section.main-title > h1 {
+            font-size: 45px;
+        }
+
+        main > section.main-image > div {
+            background: url(imagens/gui-trabalho.PNG);
+            background-size: cover;
+            border-radius: 75px;
+            width: 150px;
+            height: 150px;
+            border: 1px solid white;
+        }
+
+        main > section.main-social {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+
+            width: 300px;
+        }
+
+        main > section.main-social > nav > a > img {
+            padding: 4px;
+            width: 40px;
+            height: 40px;
+        }
+
+        main > section.main-text {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 80px;
+            width: 320px;
+            margin-bottom: 60px;
+        }
+
+        main > section.main-text > p {
+            font-size: 16px;
+            width: 160px;
+        }
+
+        main > section.main-text > i {
+            font-size: 18px;
+        }
+
+        main > section.main-text > a {
+            font-size: 20px;
+            padding: 8px;
+            border: 1px solid white;
+            background-color: var(--cor5);
+            text-decoration: none;
+            border-radius: 20px;
+            margin-left: 15px;
+        }
+
+        main > section.main-text > a:hover {
+            background-color: white;
+            color: var(--cor6);
+            transition: .6s;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,9 +99,9 @@
         <div class="logo-menu"><a href="index.html">gui</a></div>
 
         <nav id="itens">
-            <a href="#">início</a>
-            <a href="#">resumo</a>
-            <a href="#">projetos</a>
+            <a href="index.html">início</a>
+            <a href="resumo.html">resumo</a>
+            <a href="projetos.html">projetos</a>
         </nav>
 
         <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
@@ -48,7 +133,7 @@
 
             <i class="material-icons">arrow_forward</i>
 
-            <a href="#">resumo</a>
+            <a href="resumo.html">resumo</a>
 
         </section>
         

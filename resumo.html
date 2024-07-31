@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+    <style>
+        main {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        
+        }
+        
+        main h1 {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        
+        main p {
+            text-indent: 15px;
+            text-align: justify;
+        }
+        
+        main ul {
+            list-style-position: inside;
+        }
+        
+        main > section {
+            width: 350px;
+            height: 220px;
+        }
+        
+        main > section.main-sobre {
+            padding-top: 30px;
+        }
+        
+        main > section.main-estudos {
+            height: 290px;
+        }
+        
+        main > section.main-curiosidades {
+            height: 320px;
+            margin-bottom: 30px;
+        }
+        
+        main li {
+            padding: 10px;
+        }
+        
+        main > section.main-bolacha {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+        
+        main > section.main-bolacha > div {
+            background: url(imagens/bolacha.jpeg);
+            background-size: cover;
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <header>
+
+        <div class="logo-menu"><a href="index.html">gui</a></div>
+
+        <nav id="itens">
+            <a href="index.html">início</a>
+            <a href="#">resumo</a>
+            <a href="projetos.html">projetos</a>
+        </nav>
+
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+
+    </header>
+
+    <main>
+
+        <section class="main-sobre">
+            <h1>Sobre mim</h1>
+
+            <p>Sou Guilherme Fernandes Rodrigues, nascido em 12 de julho de 2005. </p>
+            <p>Iniciando no ramo de desenvolver sites e sistemas, atualmente ampliando meu conhecimento buscando melhorar minha qualificação.</p>
+            
+        </section>
+
+        <section class="main-estudos">
+            <h1>Estudos</h1>
+
+            <ul>
+                <li>Análise e Desenvolvimento de Sistemas - UNISINOS (2/5)</li>
+                <li>Módulo 4 de 5 HTML5 e CSS3 - CursoemVideo</li>
+                <li>Módulo 1 de 3 JavaScript - CursoemVideo</li>
+                <li>Inglês Intermediário - BeWise Idiomas (2/5)</li>
+            </ul>
+        </section>
+
+        <section class="main-curiosidades">
+            <h1>Curiosidades</h1>
+
+            <ul>
+                <li>Sou uma formiga, amo tudo que tem açúcar</li>
+                <li>Chocotone é minha comida favorita</li>
+                <li>Tenho 5 gatos e 3 cachorros</li>
+                <li>Gosto muito e me importo muito com estilo e roupas</li>
+                <li>Amo skate (mas dei um tempo)</li>
+                <li>Cor favorita: roxo (que surpresa)</li>
+            </ul>
+        </section>
+
+        <section class="main-bolacha">
+            <div></div>
+        </section>
+
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+</html>

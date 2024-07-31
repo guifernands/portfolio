@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="logo-menu"><a href="index.html">gui</a></div>
+
+        <nav id="itens">
+            <a href="index.html">início</a>
+            <a href="resumo.html">resumo</a>
+            <a href="projetos.html">projetos</a>
+        </nav>
+
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+
+    </header>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
