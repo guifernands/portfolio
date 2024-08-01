@@ -15,25 +15,31 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             height: 94vh;
         }
 
-        main > section.main-title {
+        main > div.bloco1 {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        main > div.bloco1 > section.main-title {
             margin-top: 70px;
             width: 320px;
             height: 180px;
         }
 
-        main > section.main-title > p {
+        main > div.bloco1 > section.main-title > p {
             font-size: 24px;
         }
 
-        main > section.main-title > h1 {
+        main > div.bloco1 > section.main-title > h1 {
             font-size: 45px;
         }
 
-        main > section.main-image > div {
+        main > div.bloco1 > section.main-image > div {
             background: url(imagens/gui-trabalho.PNG);
             background-size: cover;
             border-radius: 75px;
@@ -42,7 +48,13 @@
             border: 1px solid white;
         }
 
-        main > section.main-social {
+        main > div.bloco2 {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        main > div.bloco2 > section.main-social {
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
@@ -50,13 +62,13 @@
             width: 300px;
         }
 
-        main > section.main-social > nav > a > img {
+        main > div.bloco2 > section.main-social > nav > a > img {
             padding: 4px;
             width: 40px;
             height: 40px;
         }
 
-        main > section.main-text {
+        main > div.bloco2 > section.main-text {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
@@ -67,16 +79,16 @@
             margin-bottom: 60px;
         }
 
-        main > section.main-text > p {
+        main > div.bloco2 > section.main-text > p {
             font-size: 16px;
             width: 160px;
         }
 
-        main > section.main-text > i {
+        main > div.bloco2 > section.main-text > i {
             font-size: 18px;
         }
 
-        main > section.main-text > a {
+        main > div.bloco2 > section.main-text > a {
             font-size: 20px;
             padding: 8px;
             border: 1px solid white;
@@ -86,14 +98,94 @@
             margin-left: 15px;
         }
 
-        main > section.main-text > a:hover {
+        main > div.bloco2 > section.main-text > a:hover {
             background-color: white;
             color: var(--cor6);
             transition: .6s;
         }
-    </style>
 
-    <link rel="stylesheet" href="estilos/media-query.css">
+        @media screen and (min-width: 768px){
+    
+            header > nav#itens {
+                display: block;
+                margin: auto;
+            }
+
+            header > i#menu{
+                display: none;
+            }
+
+            main {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-content: center;
+            }
+            main > div.bloco1 {
+                flex-flow: row nowrap;
+
+            }
+
+            main > div.bloco2 {
+                flex-flow: row nowrap;
+
+            }
+            
+            main > div.bloco1 > section.main-title {
+                width: 396px;
+                height: 231px;
+                margin-top: 0px;
+            }
+
+            main > div.bloco1 > section.main-title > p {
+                font-size: 30px;
+            }
+
+            main > div.bloco1 > section.main-title > h1 {
+                font-size: 60px;
+            }
+
+            main > div.bloco1 > section.main-image > div {
+                width: 230px;
+                height: 230px;
+                border-radius: 120px;
+                margin-left: 30px;
+            }
+
+            main > div.bloco2 > section.main-social {
+                padding-left: 30px;
+                margin-top: 40px;
+                width: 357px;
+            }
+
+            main > div.bloco2 > section.main-text {
+                margin-top: 40px;
+                margin-bottom: 0px;
+                width: 360px;
+            }
+
+            main > div.bloco2 > section.main-text > p {
+                font-size: 20px;
+                width: 192px;
+            }
+
+            main > div.bloco2 > section.main-text > i {
+                font-size: 22px;
+            }
+
+            main > div.bloco2 > section.main-text > a {
+                font-size: 22px;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            
+            main {
+
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -113,32 +205,32 @@
 
     <main>
 
-        <section class="main-title">
-            <p>Opa! Sou</p>
-            <h1>Guilherme Fernandes</h1>
-            <p>Desenvolvedor de Sites Iniciante</p>
-        </section>
+        <div class="bloco1">
+            <section class="main-title">
+                <p>Opa! Sou</p>
+                <h1>Guilherme Fernandes</h1>
+                <p>Desenvolvedor de Sites Iniciante</p>
+            </section>
+            <section class="main-image">
+                <div></div>
+            </section>
+        </div>
 
-        <section class="main-image">
-            <div></div>
-        </section>
-
-        <section class="main-social">
-            <nav>
-                <a href="https://github.com/guifernands" target="_blank"><img src="imagens/github.png" alt="GitHub"></a>
-                <a href="https://www.instagram.com/unluckygui/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/guilherme-fernandes-66114925b/" target="_blank"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
-            </nav>
-        </section>
-
-        <section class="main-text">
-            <p>Conheça um pouco mais sobre mim </p>
-
-            <i class="material-icons">arrow_forward</i>
-
-            <a href="resumo.html">resumo</a>
-
-        </section>
+        <div class="bloco2">
+            <section class="main-social">
+                <nav>
+                    <a href="https://github.com/guifernands" target="_blank"><img src="imagens/github.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/unluckygui/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/guilherme-fernandes-66114925b/" target="_blank"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+                    </nav>
+            </section>
+            
+            <section class="main-text">
+                <p>Conheça um pouco mais sobre mim </p>
+                <i class="material-icons">arrow_forward</i>
+                <a href="resumo.html">resumo</a>
+            </section>
+        </div>
         
     </main>
 
