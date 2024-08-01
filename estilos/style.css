@@ -48,7 +48,7 @@ header > div.logo-menu > a {
     text-decoration: none;
 }
 
-header > i {
+header > i#menu {
     user-select: none;
     cursor: pointer;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
