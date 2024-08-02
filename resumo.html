@@ -10,11 +10,22 @@
 
 
     <style>
+
+        :root {
+            --cor1: #8F3DBB;
+            --cor2: #774791;
+            --cor3: #A125E5;
+            --cor4: #5A4366;
+            --cor5: #38313C;
+            --cor6: #302933;
+
+            --fonte-padrao: 'Courier Prime';
+        }
+
         main {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-        
         }
         
         main h1 {
@@ -53,24 +64,72 @@
             padding: 10px;
         }
         
-        main > section.main-bolacha {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 30px;
-        }
-        
-        main > section.main-bolacha > div {
-            background: url(imagens/bolacha.jpeg);
-            background-size: cover;
-            border-radius: 100px;
-            width: 200px;
-            height: 200px;
-            border: 1px solid white;
-        }
 
         @media screen and (min-width:768px) {
             
-            
+            header > nav#itens {
+                display: block;
+                margin: auto;
+            }
+
+            header > i#menu{
+                display: none;
+            }
+
+            main h1 {
+                font-size: 37px;
+                margin-top: 60px;
+            }
+
+            main > section.main-sobre {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+
+                width: 700px;
+                height: 220px;
+                
+            }
+
+            main > section.main-sobre > p {
+                margin-left: 40px;
+            }
+
+            main > section.main-sobre > p {
+                font-size: 18px;
+                width: 300px;
+                margin-top: 60px;
+            }
+
+            main > section.main-estudos {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+
+                width: 700px;
+                height: 220px;
+                
+            }
+
+            main > section.main-estudos > ul {
+                width: 470px;
+                margin-top: 60px;margin-left: 40px;
+            }
+
+            main > section.main-curiosidades {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+
+                width: 700px;
+                height: 220px;
+                margin-bottom: 130px;
+            }
+
+            main > section.main-curiosidades > ul {
+                width: 390px;
+                margin-top: 60px;margin-left: 40px;
+            }
         }
     </style>
 
@@ -96,15 +155,15 @@
     <main>
 
         <section class="main-sobre">
-            <h1>Sobre mim</h1>
+            <h1>sobre mim</h1>
 
-            <p>Sou Guilherme Fernandes Rodrigues, nascido em 12 de julho de 2005. </p>
-            <p>Iniciando no ramo de desenvolver sites e sistemas, atualmente ampliando meu conhecimento buscando melhorar minha qualificação.</p>
+            <p>Sou Guilherme Fernandes Rodrigues, nascido em 12 de julho de 2005.
+            Iniciando no ramo de desenvolver sites e sistemas, atualmente ampliando meu conhecimento buscando melhorar minha qualificação.</p>
             
         </section>
 
         <section class="main-estudos">
-            <h1>Estudos</h1>
+            <h1>estudos</h1>
 
             <ul>
                 <li>Análise e Desenvolvimento de Sistemas - UNISINOS (2/5)</li>
@@ -115,7 +174,7 @@
         </section>
 
         <section class="main-curiosidades">
-            <h1>Curiosidades</h1>
+            <h1>curiosidades</h1>
 
             <ul>
                 <li>Sou uma formiga, amo tudo que tem açúcar</li>
@@ -125,10 +184,6 @@
                 <li>Amo skate (mas dei um tempo)</li>
                 <li>Cor favorita: roxo (que surpresa)</li>
             </ul>
-        </section>
-
-        <section class="main-bolacha">
-            <div></div>
         </section>
 
     </main>
