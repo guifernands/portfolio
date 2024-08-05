@@ -20,6 +20,20 @@
 
         main > section.main-projetos {
             padding-top: 30px;
+            font-weight: bold;
+        }
+
+        main > section.main-projetos > h1 {
+            font-size: 30px;
+        }
+
+        main > section.main-projetos > ul {
+            font-size: 18px;
+            list-style-position: inside;
+        } 
+
+        main > section.main-projetos > ul > li::after {
+            content: '\00A0\1F517';
         }
 
         @media screen and (min-width: 768px) {
@@ -55,9 +69,14 @@
 
         <section class="main-projetos">
 
-            <h1>Projetos</h1>
+            <h1>Projetos CursoemVideo</h1>
 
-            <p>vazio... por enquanto.</p>
+            <ul>
+                <li><a href="https://guifernands.github.io/projeto-android/" target="_blank">Android</a></li>
+                <li><a href="https://guifernands.github.io/projeto-cordel/" target="_blank">Cordel</a></li>
+                <li><a href="https://guifernands.github.io/projeto-login/" target="_blank">Login</a></li>
+                <li><a href="https://guifernands.github.io/projeto-social/" target="_blank">Social</a></li>
+            </ul>
 
         </section>
 
